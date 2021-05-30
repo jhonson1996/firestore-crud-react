@@ -4,8 +4,8 @@ import img from '../fotos/aceites/1.png'
 
 const Datos = () => {
   const [productos, setProductos] = useState([]);
-
-  const getDatos = () => {
+  
+ const getDatos = () => {
     db.collection("Productos").onSnapshot((datos) => {
       const dato = [];
       datos.forEach((doc) => {
@@ -19,6 +19,9 @@ const Datos = () => {
       getDatos();
   },[]);
 
+  const filtrarDatos = (e) => {
+    const filter = productos.filter(el => el.categoria.includes(e.target.id))
+  }
 
   return (
     <div className="product-list">
