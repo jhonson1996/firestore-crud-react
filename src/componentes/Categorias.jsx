@@ -1,20 +1,16 @@
 import React from "react";
 
-//import Articulos from './Articulos'
+//
 
-function Categoria() {
+function Categoria({selectCategory}) {
+  
+  
   return (
     <div className="category_list" id="con">
-      <h1>Categorias</h1>
-      <button className="category-item" id="aceites" onClick={name}>
-        Aceites
-      </button>
-      <button className="category-item" id="comidas" onClick={name}>
-        Comidas
-      </button>
-      <button className="category-item" id="cremas" onClick={name}>
-        Cremas
-      </button>
+      <button className="category-item" onClick={(e)=> selectCategory('all')}>Todo</button>
+      <button className="category-item" onClick={(e)=> selectCategory('aceite')}>Animal</button>
+      <button className="category-item" onClick={(e)=> selectCategory('comida')}>Natual</button>
+      <button className="category-item" onClick={(e)=> selectCategory('crema')}>Tecnologia</button>
     </div>
   );
 }

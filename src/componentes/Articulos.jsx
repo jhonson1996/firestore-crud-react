@@ -1,34 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { db } from "../firebase"
-import img from '../fotos/aceites/1.png'
+import React from "react";
 
-const Datos = () => {
-  const [productos, setProductos] = useState([]);
-  
- const getDatos = () => {
-    db.collection("Productos").onSnapshot((datos) => {
-      const dato = [];
-      datos.forEach((doc) => {
-        dato.push({...doc.data(), id: doc.id});
-      });
-      setProductos(dato);
-    });
-  };
-
-  useEffect(() => {
-      getDatos();
-  },[]);
-
-  const filtrarDatos = (e) => {
-    const filter = productos.filter(el => el.categoria.includes(e.target.id))
-  }
-
+const Datos = ({ productos }) => {
   return (
     <div className="product-list">
       {productos.map((art) => (
-          <div className="product-item" category="aceites" key={art.id}>
+        <div className="product-item" category="aceites" key={art.id}>
           <img src={art.image} alt="" />
-
           <button>{art.nombre}</button>
         </div>
       ))}
