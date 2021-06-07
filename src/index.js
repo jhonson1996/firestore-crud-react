@@ -2,15 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-
+import Registro from './componentes/Registro'
+import Navegacion from './componentes/BarraNavegacion';
+import Inicio from './componentes/Inicio'
 import './firebase';
-import 'bootswatch/dist/superhero/bootstrap.min.css'
+import 'bootswatch/dist/quartz/bootstrap.min.css'
+
+
+
 
 ReactDOM.render(
-  
-    <div>
-      <App />
-    </div>
+  <div>
+    <Navegacion/>
+    <Inicio/>
+    <Registro />
+
+  </div>
   ,
   document.getElementById('root')
 );
