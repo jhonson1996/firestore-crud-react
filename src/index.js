@@ -15,7 +15,7 @@ ReactDOM.render(
   <div>
     <Navegacion/>
     <Inicio/>
-    <Registro />
+    <Registro/>
 
   </div>
   ,
