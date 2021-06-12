@@ -1,8 +1,9 @@
-import React, {useState} from 'react'
+import React from 'react'
+import {Link} from 'react-router-dom'
 
-const Navegacion = () => {
-    const [registo, setRegisto] = useState('')
-    const [inicio, setInicio] = useState('')
+
+const Navegacion = ({logout}) => {
+    
     return (
         
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -15,14 +16,15 @@ const Navegacion = () => {
             <div className="navbar-collapse collapse d-flex justify-content-end" id="navbarColor01" >
                 <ul className="navbar-nav flex">
                     <li className="nav-item">
-                        <a className="nav-link" href="/#" data-toggle="modal" data-target="#Modal1">Iniciar Seccion</a>
+                        <Link className="nav-link" to={'/inicio'} >Iniciar Seccion</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/#" data-toggle="modal" data-target="#Modal">Registrarme</a>
+                        <Link className="nav-link" to={'/registro'}>Registrarme</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/#">Salir</a>
+                        <a className="nav-link" >Salir</a>
                     </li>
+                    
                     
                 </ul>
             </div>
