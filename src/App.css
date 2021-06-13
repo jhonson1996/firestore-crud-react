@@ -69,3 +69,12 @@
   color: #fff;
   border-radius: 1rem; 
 }
+
+.category_list .salir{
+  width: 90%;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  background: #c20716;
+  color: #fff;
+  border-radius: 1rem; 
+}

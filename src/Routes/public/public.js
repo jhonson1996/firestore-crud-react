@@ -5,15 +5,15 @@ import Inicio from '../../componentes/Inicio'
 import Tienda from '../../componentes/Tienda'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-export const Public = ({ setEmail, setPassword, password, email}) => {
+export const Public = ({ User}) => {
 	return (
 		<div>
 			<Router>
 				<div>
-					<Navegacion />
+					<Navegacion user={User}/>
 					<Switch>
-						<Route path={'/inicio'} component={() => <Inicio setEmail={()=>setEmail()} setPassword={()=>setPassword()} email={email}  password={password} />} ></Route>
-						<Route path={'/registro'} component={() => <Registro setEmail={()=>setEmail()} setPassword={()=>setPassword()} email={email} password={password} />} ></Route>
+						<Route path={'/inicio'} component={() => <Inicio  />} ></Route>
+						<Route path={'/registro'} component={() => <Registro  />} ></Route>
 						{/* <Route patch={'/erro'}component={Error} /> */} 
 						<Route path={'/'} component={Tienda} /> 
 					</Switch>

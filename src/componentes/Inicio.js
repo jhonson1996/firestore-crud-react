@@ -64,7 +64,7 @@ const Inicio = () => {
 					<label htmlFor="exampleInputPassword1" className="form-label mt-4">Password</label>
 
 					<input
-						type="text"
+						type="password"
 						className="form-control"
 						value={password}
 						onChange={onHandlePassword}

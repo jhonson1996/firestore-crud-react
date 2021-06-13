@@ -44,16 +44,11 @@ function Tienda({logout}) {
 
 			<div className="category_list">
 				<h1>Categorias</h1>
-				<Categoria selectCategory={setSelectedCategory} />
+				<Categoria logout={logout} selectCategory={setSelectedCategory} />
 			</div>
 			<section className="product">
 				<Articulos productos={filteredProducts} />
-				<ul className="navbar-nav flex">
-                    <li className="nav-item">
-                        
-                        <a className="nav-link" onClick={logout}>Salir</a>
-                    </li>
-                </ul>
+				
                     
 			</section>
 		</>

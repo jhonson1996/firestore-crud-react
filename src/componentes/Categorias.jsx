@@ -2,7 +2,7 @@ import React from "react";
 
 //
 
-function Categoria({selectCategory}) {
+function Categoria({selectCategory, logout}) {
   
   
   return (
@@ -11,6 +11,7 @@ function Categoria({selectCategory}) {
       <button className="category-item" onClick={(e)=> selectCategory('aceite')}>Animal</button>
       <button className="category-item" onClick={(e)=> selectCategory('comida')}>Natual</button>
       <button className="category-item" onClick={(e)=> selectCategory('crema')}>Tecnologia</button>
+      <button className="salir" onClick={logout}>Salir</button>
     </div>
   );
 }
