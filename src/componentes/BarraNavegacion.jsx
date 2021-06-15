@@ -2,13 +2,13 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 
 
-const Navegacion = ({user}) => {
+const Navegacion = () => {
     
     return (
         
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="d-flex justify-content-between container">
-        <p>holaaa{user}</p>
+        
             <a className="navbar-brand" href="/#">Bienvenidos </a>
             <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>

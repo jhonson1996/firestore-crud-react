@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 
 import './firebase';
-import 'bootswatch/dist/quartz/bootstrap.min.css'
+import 'bootswatch/dist/cyborg/bootstrap.min.css'
 
 
 

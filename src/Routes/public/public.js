@@ -15,7 +15,7 @@ export const Public = ({ User}) => {
 						<Route path={'/inicio'} component={() => <Inicio  />} ></Route>
 						<Route path={'/registro'} component={() => <Registro  />} ></Route>
 						{/* <Route patch={'/erro'}component={Error} /> */} 
-						<Route path={'/'} component={Tienda} /> 
+						<Route path={'/'} component={Inicio} /> 
 					</Switch>
 
 

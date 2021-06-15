@@ -45,8 +45,9 @@ const Inicio = () => {
 	}
 
 	return (
-		<div>
-			<h1>INICIO DE SECCION</h1>
+		<>
+        <h1 id="i">INICIO DE SECCION</h1>
+		<div className="form">
 			<form onSubmit={(e) => submitInicio(e)} className="form-group px-5">
 				<div className="form-group px-5 ">
 					<label htmlFor="exampleInputEmail1" className="form-label mt-4">Email address</label>
@@ -71,11 +72,12 @@ const Inicio = () => {
 					/>
 
 				</div>
-				<div className="modal-footer">
-					<input type="submit" className="btn btn-primary" value='Iniciar Sesion' />
+				<div className="boton">
+					<button type="submit" className="btn btn-primary " value='Iniciar Sesion'>Iniciar</button> 
 				</div>
 			</form>
 		</div>
+		</>
 	)
 }
 

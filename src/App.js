@@ -13,7 +13,7 @@ function App() {
 	const [email, setEmail] = useState();
 	const [password, setPassword] = useState();
 	const [usuario, setUsuario] = useState({usuari:''});
-  const [authentication, setAuthState] = useState({
+    const [authentication, setAuthState] = useState({
 		authenticated: false, //whether the user is allowed to access the protected routes
 		initialized: true //if firebase is still being nitalized
 	});

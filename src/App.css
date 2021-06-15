@@ -19,6 +19,31 @@
   flex-direction: row;
 }
 
+.form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+}
+
+#i{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.form-group{
+  width: 55%;
+  padding-top: 50px;
+}
+
+.form-group .boton{
+  width: 55%;
+  padding-top: 15px;
+  padding-left: 330px;
+}
+
 .product{
   display: flex;
   flex-direction: row;

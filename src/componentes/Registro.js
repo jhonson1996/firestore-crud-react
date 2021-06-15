@@ -38,9 +38,10 @@ const Login = () => {
 
 	return (
 
-		<div>
-			<h1>REGISTRATE</h1>
-			<form onSubmit={submitRegistro} className="form-group px-5">
+		<>
+        <h1 id="i">REGISTRATE</h1>
+		<div className="form">
+			<form onSubmit={(e) => submitRegistro(e)} className="form-group px-5">
 				<div className="form-group px-5 ">
 					<label htmlFor="exampleInputEmail1" className="form-label mt-4">Email address</label>
 
@@ -57,17 +58,19 @@ const Login = () => {
 					<label htmlFor="exampleInputPassword1" className="form-label mt-4">Password</label>
 
 					<input
-						type="text"
+						type="password"
 						className="form-control"
 						value={password}
 						onChange={onHandlePassword}
 					/>
+
 				</div>
-				<div className="modal-footer">
-					<input type="submit" className="btn btn-primary" value='Registrarme' />
+				<div className="boton">
+					<button type="submit" className="btn btn-primary " value='Iniciar Sesion'>Registrame</button> 
 				</div>
 			</form>
 		</div>
+		</>
 	)
 }
 
