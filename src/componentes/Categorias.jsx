@@ -6,12 +6,12 @@ function Categoria({selectCategory, logout}) {
   
   
   return (
-    <div className="category_list" id="con">
-      <button className="category-item" onClick={(e)=> selectCategory('all')}>Todo</button>
-      <button className="category-item" onClick={(e)=> selectCategory('aceite')}>Animal</button>
-      <button className="category-item" onClick={(e)=> selectCategory('comida')}>Natual</button>
-      <button className="category-item" onClick={(e)=> selectCategory('crema')}>Tecnologia</button>
-      <button className="salir" onClick={logout}>Salir</button>
+    <div className="btn-group-vertical " >
+      <button className="btn btn-primary mb-1" onClick={(e)=> selectCategory('all')}>Todo</button>
+      <button className="btn btn-primary mb-1" onClick={(e)=> selectCategory('aceite')}>Animal</button>
+      <button className="btn btn-primary mb-1" onClick={(e)=> selectCategory('comida')}>Natual</button>
+      <button className="btn btn-primary mb-1" onClick={(e)=> selectCategory('crema')}>Tecnologia</button>
+      <button className="btn btn-danger mb-1" onClick={logout}>Salir</button>
     </div>
   );
 }

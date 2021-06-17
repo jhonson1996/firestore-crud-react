@@ -9,13 +9,13 @@ export const Private = ({logout, User}) => {
                 <Router >
                     <p>Bienvenido {User}</p>
                 <h1>Galeria De Animales</h1>
-                <div className="container">
+                <section className="container">
                     <Switch> 
                          <Route path={'/'} component={()=><Tienda logout={()=>logout()}/>}  /> 
                     </Switch>
 
 
-                </div>
+                </section>
             </Router>
         </div>
     )

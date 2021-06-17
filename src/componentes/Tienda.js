@@ -46,7 +46,7 @@ function Tienda({logout}) {
 				<h1>Categorias</h1>
 				<Categoria logout={logout} selectCategory={setSelectedCategory} />
 			</div>
-			<section className="product">
+			<section className="" >
 				<Articulos productos={filteredProducts} />
 				
                     
