@@ -40,35 +40,30 @@ const Login = () => {
 
 		<>
         <h1 id="i">REGISTRATE</h1>
-		<div className="form">
-			<form onSubmit={(e) => submitRegistro(e)} className="form-group px-5">
-				<div className="form-group px-5 ">
-					<label htmlFor="exampleInputEmail1" className="form-label mt-4">Email address</label>
+		<div className="row mt-5">
+			<div className="col"></div>
+			<div className="col card d-flex justify-content-center">
+				<form onSubmit={(e) => submitRegistro(e)} className="form-group card-body ">
+				<input 
+				className="form-control "
+				type="text"
+				value={email}
+				onChange={onHandleEmail}
+			    placeholder="Introduce el E-mail" />
+				<input 
+				onChange={onHandlePassword}
+				value={password}
+				className="form-control mt-4"
+				type="password"
+			    placeholder="Introduce el Password" />
 
-					<input
-						type="email"
-						className="form-control"
-						value={email}
-						onChange={onHandleEmail}
-					/>
+				<input value="Registrar Usuario"
+				className="btn btn-primary btn-block mt-4"
+				type="submit"/> 
 
-					<small id="emailHelp" className="form-text">We'll never share your email with anyone else.</small>
-				</div>
-				<div className="form-group px-5">
-					<label htmlFor="exampleInputPassword1" className="form-label mt-4">Password</label>
-
-					<input
-						type="password"
-						className="form-control"
-						value={password}
-						onChange={onHandlePassword}
-					/>
-
-				</div>
-				<div className="boton">
-					<button type="submit" className="btn btn-primary " value='Iniciar Sesion'>Registrame</button> 
-				</div>
-			</form>
+				</form>
+			</div>
+			<div className="col"></div>
 		</div>
 		</>
 	)
