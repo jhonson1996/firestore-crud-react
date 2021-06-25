@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { db } from "../firebase"
 import Articulos from './Articulos'
 import Categoria from './Categorias'
-import Descripcion from './DescripsionArticulo'
+
 
 
 function Tienda({logout}) {
@@ -49,7 +49,7 @@ function Tienda({logout}) {
 			</div>
 			<section className="" >
 				<Articulos productos={filteredProducts} />
-				<Descripcion/>
+				
                     
 			</section>
 		</>
