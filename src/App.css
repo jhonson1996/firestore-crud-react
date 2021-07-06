@@ -1,23 +1,45 @@
 .wrap{
+  display: flex;
+  flex-flow: column wrap;
   max-width: 1100px;
   width: 90%;
   margin: auto;
 }
 
-.wrap > h1 {
-  color: #db5b1f;
-  font-weight: 400;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 15px 0px;
+.xd{
+  padding-top: 4rem;
 }
 
-.container{
-  height: 50px;
+#menu{
+  margin-left: -6rem;
+}
+
+.form{
+  margin-left: 7rem;
+  margin-top: 1rem;
+  margin-bottom: 4.3rem;
+}
+
+ .h {
+   padding-top: 6rem;
+  color: #ada4af;
+  text-align: end;
+  margin: 15px 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ht {
+  padding-top: 3rem;
+ color: #ada4af;
+ text-align: end;
+ margin: 15px 0px;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contain{
   display: flex;
-  flex-flow: column wrap;
-  
+  flex-flow: row wrap;
+  background-color: aqua;
 }
 
 #i{
@@ -37,15 +59,6 @@
   padding-left: 330px;
 }
 
-.product{
-  display: flex;
-  flex-direction: row;
-  
-  margin: 15px 0px;
-  color: #db5b1f;
-  width: 100%;
-}
-
 .product-list{
   display: flex;
   flex-flow: row wrap;
@@ -54,20 +67,14 @@
   margin: 30px 0px;
 }
 
-.product-item{
-  width: 22%;
-  margin-left: 3%;
-  margin-bottom: 25px;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.22);
-
+.set{
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row nowrap;
 }
 
 .sec{
   display: flex;
   flex-flow: row wrap;
-  height: auto;
   margin: 10px;
   justify-content: space-around;
   margin-bottom: 1px;
@@ -75,10 +82,6 @@
 
 .art{
   margin-top: 5px;
-}
-
-.product-item img{
-  width: 100%;
 }
 
 .category_list{

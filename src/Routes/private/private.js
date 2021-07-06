@@ -1,23 +1,17 @@
-import React from 'react'
-import Tienda from '../../componentes/Tienda'
+import React from 'react';
+import Tienda from '../../componentes/Tienda';
+import Perfil from '../../componentes/Perfil';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navegacion from '../../componentes/BarraNavegacion';
 
-export const Private = ({logout, User}) => {
+export const Private = ({ logout, User }) => {
     return (
-        <div className="wrap">
-                <Router >
-                    <p>Bienvenido {User}</p>
-                <h1>Galeria De Animales</h1>
-                <section className="container">
-                    <Switch> 
-                         <Route path={'/'} component={()=><Tienda logout={()=>logout()}/>}  /> 
-                    </Switch>
+        <Router >
+            <Switch>
+                <Route path={'/perfil'} component={()=><Perfil/>}></Route>
+                <Route path={'/'} component={() => <Tienda logout={() => logout()} User={User} />} />
+            </Switch>
+        </Router>
 
-
-                </section>
-            </Router>
-        </div>
     )
 }
 

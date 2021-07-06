@@ -1,0 +1,9 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    background: #2980B9;  
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9); 
+    background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9); 
+    height: 100vh;
+}

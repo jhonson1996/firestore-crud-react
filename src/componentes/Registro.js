@@ -39,11 +39,11 @@ const Login = () => {
 	return (
 
 		<>
-        <h1 id="i">REGISTRATE</h1>
-		<div className="row mt-5">
+        <h1 id="i" className="h">REGISTRATE</h1>
+		<div className="row mt-5 xd">
 			<div className="col"></div>
-			<div className="col card d-flex justify-content-center">
-				<form onSubmit={(e) => submitRegistro(e)} className="form-group card-body ">
+			<div className="col card text-white bg-primary mb-3">
+				<form onSubmit={(e) => submitRegistro(e)} className="form-group  form">
 				<input 
 				className="form-control "
 				type="text"
@@ -58,7 +58,7 @@ const Login = () => {
 			    placeholder="Introduce el Password" />
 
 				<input value="Registrar Usuario"
-				className="btn btn-primary btn-block mt-4"
+				className="btn btn-dark btn-block mt-4"
 				type="submit"/> 
 
 				</form>

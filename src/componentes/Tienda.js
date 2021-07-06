@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from "react";
-import { db } from "../firebase"
-import Articulos from './Articulos'
-import Categoria from './Categorias'
+import { db } from "../firebase";
+import Articulos from './Articulos';
+import Categoria from './Categorias';
+import BarraT from './BarraT';
 
 
 
-function Tienda({logout}) {
+function Tienda({ logout, User }) {
 
 	const [productos, setProductos] = useState([]);
 	const [filteredProducts, setFilteredProducts] = useState([]);
 	const [selectedCategory, setSelectedCategory] = useState('all');
 
-	
+
 
 
 	useEffect(() => {
@@ -40,19 +41,21 @@ function Tienda({logout}) {
 
 
 	return (
-		<>
-			
+		<div className="container">
+			<BarraT User={User} logout={logout}/>
+            <h1 className="ht">Galeria De Animales</h1>
 
+			<section className='d-flex'>
 			<div className="category_list">
 				<h1>Categorias</h1>
-				<Categoria logout={logout} selectCategory={setSelectedCategory} />
+				<Categoria selectCategory={setSelectedCategory} />
 			</div>
-			<section className="" >
-				<Articulos productos={filteredProducts} />
-				
-                    
+
+			
+			<Articulos productos={filteredProducts} />
+			
 			</section>
-		</>
+		</div>
 	);
 }
 

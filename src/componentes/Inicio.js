@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import auth from '../firebase'
+import { Link } from "react-router-dom";
 
 const Inicio = () => {
 	const [email, setEmail] = useState();
@@ -46,11 +47,11 @@ const Inicio = () => {
 
 	return (
 		<>
-        <h1 id="i">INICIO DE SECCION</h1>
-		<div className="row mt-5">
+        <h1 id="i" className="h">INICIO DE SECCION</h1>
+		<div className="row mt-5 xd">
 			<div className="col"></div>
-			<div className="col card d-flex justify-content-center">
-				<form onSubmit={(e) => submitInicio(e)} className="form-group card-body ">
+			<div className="col card text-white bg-primary mb-3 ">
+				<form onSubmit={(e) => submitInicio(e)} className="form-group form">
 				<input 
 				className="form-control "
 				type="text"
@@ -65,7 +66,7 @@ const Inicio = () => {
 			    placeholder="Introduce el Password" />
 
 				<input value="Iniciar Sesion"
-				className="btn btn-primary btn-block mt-4"
+				className="btn btn-dark btn-block mt-4"
 				type="submit"/> 
 
 				</form>
