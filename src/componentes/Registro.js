@@ -11,14 +11,14 @@ const Login = () => {
 			.then((userCredential) => {
 				console.log('holiii');
 				// Signed in
-				var user = userCredential.user;
+				//var user = userCredential.user;
 				// ...
 				setEmail('')
 				setPassword('')
 			})
 			.catch((error) => {
-				var errorCode = error.code;
-				var errorMessage = error.message;
+				//var errorCode = error.code;
+				//var errorMessage = error.message;
 				// ..
 			});
 

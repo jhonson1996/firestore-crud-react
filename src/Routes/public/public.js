@@ -8,16 +8,15 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 export const Public = () => {
 	return (
-		<Router>
-			<Navegacion />
-			<Switch>
-				<Route path={'/inicio'} component={() => <Inicio />} ></Route>
-				<Route path={'/registro'} component={() => <Registro />} ></Route>
-				
-			</Switch>
-		</Router>
-
-	)
+    <Router>
+      <Navegacion />
+      <Switch>
+        <Route path={"/inicio"} component={() => <Inicio />}></Route>
+        <Route path={"/registro"} component={() => <Registro />}></Route>
+        <Route exact path={"/"} component={() => <Registro />}></Route>
+      </Switch>
+    </Router>
+  );
 }
 
 

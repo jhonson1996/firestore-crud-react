@@ -16,14 +16,10 @@ const Datos = ({ productos }) => {
     <>
       <div className="sec">
         {productos.map((art) => (
-          <div className="art" key={art.id}>
-            <img
-              className="rounded  d-block"
-              src={art.image}
-              alt=""
-            />
+          <div className="art shadow-lg" key={art.id}>
+            <img className="rounded  d-block" src={art.image} alt="" />
             <button
-              onClick={() => detalles(art)}
+              onClick={detalles}
               type="button"
               className="btn btn-primary btn-block"
               data-toggle="modal"
@@ -33,12 +29,12 @@ const Datos = ({ productos }) => {
             </button>
           </div>
         ))}
-
         <Descripcion
           productos={productos}
           id={id}
           titulo={title}
           descripcion={descripcion}
+
         />
       </div>
     </>

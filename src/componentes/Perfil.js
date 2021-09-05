@@ -1,13 +1,23 @@
 import React from 'react'
+import { connect, useSelector } from "react-redux";
 
-function Perfil() {
+
+function Perfil({ Usuario }) {
+  /* const  Usuario = useSelector(state => state.Usuario) */
+  console.log("user: " + Usuario);
+
+  return (
+    <div className="btn-group-vertical ">
+      <h1>{Usuario}</h1>
+    </div>
+  );
+}
   
-  
-    return (
-      <div className="btn-group-vertical " >
-        <h1>PERFIL</h1>
-      </div>
-    );
-  }
-  
-  export default Perfil;
+  const mapStateToProps = (state) => {
+    return {
+      Usuario: state.Usuario,
+    };
+  };
+
+  export default connect(mapStateToProps)(Perfil);
+  /* export default Perfil; */

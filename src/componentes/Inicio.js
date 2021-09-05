@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import auth from '../firebase'
-import { Link } from "react-router-dom";
+
 
 const Inicio = () => {
 	const [email, setEmail] = useState();
@@ -17,7 +17,7 @@ const Inicio = () => {
 			.then((userCredential) => {
 				// Signed in
 				console.log('entrooooo');
-				var user = userCredential.user;
+				//var user = userCredential.user;
 
 
 				// ...
@@ -26,8 +26,8 @@ const Inicio = () => {
 			})
 			.catch((error) => {
 				console.log('no entro');
-				var errorCode = error.code;
-				var errorMessage = error.message;
+				/* var errorCode = error.code;
+				var errorMessage = error.message; */
 				// ..
 			});
 

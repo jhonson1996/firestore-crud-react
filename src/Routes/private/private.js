@@ -8,7 +8,7 @@ export const Private = ({ logout, User }) => {
         <Router >
             <Switch>
                 <Route path={'/perfil'} component={()=><Perfil/>}></Route>
-                <Route path={'/'} component={() => <Tienda logout={() => logout()} User={User} />} />
+                <Route path={'/'} component={() => <Tienda logout={logout} User={User} />} />
             </Switch>
         </Router>
 
